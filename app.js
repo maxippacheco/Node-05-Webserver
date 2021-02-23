@@ -28,7 +28,7 @@ app.get('/hola-mundo', function (req, res) {
 })
 */
 
-app.get('/', (req, res) => {
+/*app.get('/', (req, res) => {
     
 
     res.render('home', {
@@ -36,9 +36,9 @@ app.get('/', (req, res) => {
         titulo: 'Curso de Node'
     });
 
-})
+})*/
 
-app.get('/generic', (req, res) => {
+/*app.get('/generic', (req, res) => {
     
     //res.sendFile(__dirname + '/public/roadtrip/generic.html');
     res.render('generic', {
@@ -58,11 +58,11 @@ app.get('/elements', (req, res) => {
 
 
 })
-
+*/
 
 
 app.get('*', function (req, res) {
-    res.sendFile(__dirname + '/public/404.html');
+    res.sendFile(__dirname + '/public/index.html');
 })
 
 
